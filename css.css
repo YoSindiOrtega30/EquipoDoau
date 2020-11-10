@@ -1,0 +1,97 @@
+/*Configuraciones para hearder y la secciones*/
+.header{
+    background-image: url("../img/jumbotron0.jpg");
+    background-position: center;
+    background-size: cover; 
+    /*filter: brightness(0.6);
+    position: relative;*/
+}
+.vh-95{
+    height: 95vmin;
+}
+section{
+    margin-top: 30px;
+}
+/*Configuracion sección de descarga de app*/
+.jumbo-footer{ 
+    background-image: url("../img/jumbotron2.jpg");
+    height: 45vh;
+    width: 100vw;
+    margin-bottom: 0px;
+    border: none;
+    filter: brightness(0.9);
+}
+/*Configuraciones para el footer*/
+.foot{
+    background-color: #E52B50; 
+    font-size: 80%;
+    color: white;
+    text-align: center;
+    padding-right: 90px;
+    padding-left: 90px;            
+}
+.a-none a{
+  color: white;
+}
+.a-none a:hover {
+  color: white;
+}
+/*Configuraciones para el carrudel de sugeridos*/
+@media (max-width: 1200px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+@media (min-width: 1200px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+/*Configuraciones para col de filtros */
+.filtros dl, dt, dd, ol {
+    margin: 0px; padding-top: 8px; padding-bottom: 8px; 
+    width: 100%;
+    list-style:none;
+    font-size: 10px;
+}
+.filters_text {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.img-filtro{
+    --tamano:20px;
+    width: var(--tamano);   
+    height: var(--tamano);
+    margin-bottom: 10px;
+    margin-right: 15px; 
+}
+
+/*Configuración de imagenes de resultados*/
+.media-object-img {
+    --tamano:130px;
+    width: var(--tamano);   
+    height: var(--tamano);
+    margin-right: 20px;
+}
