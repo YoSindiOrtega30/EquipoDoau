@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/css.css">
+</head>
+<body >
+    <!--header-->
+    <header class="header py-3 vh-95 d-flex flex-column justify-content-center align-items-center text-white">
+        <div class="container position-absolute" style="top: 14px;">
+            <!-- navegación -->
+            <nav class="row text-white justify-content-between align-items-start">
+              <!--logo -->
+              <a href="" class="col-12 col-md-auto text-reset text-center mb-3 mb-md-0">
+                <img src="./img/opi2.png" alt="Logo" class="navbar-brand" style="width: 40px;">
+              </a>
+              <!--Anclas-->
+              <div class="col-12 col-md-auto d-flex flex-wrap justify-content-around">
+                    <a href="#" class="text-reset btn btn-sm btn-outline-light pr-3"><strong>Regístra tu negocio </strong></a>
+                    <a href="#" class="text-reset pr-3">Ayuda en línea</a>
+                    <a href="#" class="text-reset pr-3">Regístrate</a>
+                    <a id="#contenido-modal" class="text-reset pr-3"tabindex="-1" aria-disabled="true" data-toggle="modal" data-target="#contenido-modal">Ingresar</a>                   
+              </div>
+            </nav>
+        </div>
+        <!--Titulos y Formulario -->                    
+        <div class="container position-absolute" style="top: 180px;">
+            <h2 class="font-weight-bold text-center">¿Dónde podemos servirte?</h2>
+            <span class="location-text">Dirección de entrega</span>
+            <div class="row">
+                <form action="" method="POST"> 
+                    <div class="form-row input-group">   
+                        <div class="col p-0 m-0"> <!-- ciudad-->
+                            <label class="sr-only" for="inlineFormCustomSelect">Preference</label>
+                            <select class="custom-select" id="inlineFormCustomSelect">
+                                <option value="972">Armenia</option>
+                                <option value="996">Barrancabermeja</option>
+                                <option value="1009">Barranquilla</option>
+                                <option value="1086">Bello</option>
+                                <option value="975" selected="selected">Bogotá</option>
+                                <option value="1013">Bucaramanga</option>
+                                <option value="991">Cali</option>
+                                <option value="1126">Cañaveral</option>
+                                <option value="1005">Cartagena</option>
+                                <option value="982">Cartago</option>
+                                <option value="1742">Caucasia</option>
+                                <option value="979">Chia</option>
+                                <option value="1745">Cota</option>
+                                <option value="974">Cucuta</option>
+                                <option value="1740">Dos Quebradas</option>
+                                <option value="1101">Dosquebradas</option>
+                                <option value="1737">El tesoro</option>
+                                <option value="1089">Envigado</option>
+                                <option value="1122">Floridablanca</option>
+                                <option value="983">Funza</option>
+                                <option value="1463">Gaira/Rodadero</option>
+                                <option value="1008">Girardot</option>
+                                <option value="1123">Girón</option>
+                                <option value="981">Ibague</option>
+                                <option value="1087">Itagüi</option>
+                                <option value="1072">Jamundí</option>
+                                <option value="1000">La Calera</option>
+                                <option value="1739">Madrid</option>
+                                <option value="987">Manizales</option>
+                                <option value="980">Medellín</option>
+                                <option value="1007">Monteria</option>
+                                <option value="973">Mosquera</option>
+                                <option value="985">Neiva</option>
+                                <option value="1016">Palmira</option>
+                                <option value="1002">Pasto</option>
+                                <option value="1011">Pereira</option>
+                                <option value="1124">Piedecuesta</option>
+                                <option value="1103">Poblado</option>
+                                <option value="1003">Popayán</option>
+                                <option value="1743">Riohacha</option>
+                                <option value="1426">Rionegro</option>
+                                <option value="1088">Sabaneta</option>
+                                <option value="978">Santa Marta</option>
+                                <option value="998">Santa Rosa de Cabal</option>
+                                <option value="1744">Sincelejo</option>
+                                <option value="977">Soacha</option>
+                                <option value="986">Soledad</option>
+                                <option value="1104">Tesoro</option>
+                                <option value="1462">Tocancipá</option>
+                                <option value="1741">Tulua</option>
+                                <option value="1014">Tunja</option>
+                                <option value="997">Valledupar</option>
+                                <option value="984">Villavicencio</option>
+                                <option value="1077">Yumbo</option>+
+                            </select>
+                        </div>
+                        <div class="col p-0 m-0"> <!-- indicación de direcc -->
+                            <label class="sr-only" for="inlineFormCustomSelect">Preference</label>
+                            <select class="custom-select" id="inlineFormCustomSelect">
+                                <option value="1">Calle</option>
+                                <option value="2">Carrera</option>
+                                <option value="3">Avenida</option>
+                                <option value="4">Avenida Carrera</option>
+                                <option value="5">Avenida Calle</option>
+                                <option value="6">Circular</option>
+                                <option value="7">Circunvalar</option>
+                                <option value="8">Diagonal</option>
+                                <option value="9">Manzana</option>
+                                <option value="10">Transversal</option>
+                                <option value="11">Vía</option> 
+                            </select>
+                        </div>
+                        <div class="col p-0 m-0">
+                            <input type="text" class="form-control" id="inlineFormInputName" placeholder="">
+                        </div>
+                        <div class="col p-0 m-0">
+                            <input type="text" class="form-control" id="inlineFormInputName" placeholder="#">
+                        </div>
+                        <div class="col p-0 m-0">
+                            <input type="text" class="form-control" id="inlineFormInputName" placeholder="">
+                        </div>                                                        
+                        <button class="btn btn-danger font-weight-bold" onclick="" type="button" >Buscar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- información inferior 1, 2 y3 -->  
+        <ul class="list-inline position-absolute" style="top: 460px;">
+            <li class="list-inline-item">
+                <div class="row no-gutters">
+                    <div class="col-auto" >
+                    <img src="./img/jumbotron2.png" alt="..." style="max-width: 100px;"> 
+                    </div>
+                    <div class="col-auto" style="max-width: 200px;">
+                        <span class="location-text"><strong>1.Elige tu comida<br></strong></span>
+                        <span class="text-white-50"><small>Más de 800 Restaurantes con delivery online</small></span>
+                    </div>
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <div class="row no-gutters">
+                    <div class="col-auto" >
+                    <img src="./img/jumbotron3.png" alt="..." style="max-width: 100px;"> 
+                    </div>
+                    <div class="col-auto" style="max-width: 200px;">
+                        <span class="location-text"><strong>2. Haz tu pedido<br></strong></span>
+                        <span class="text-white-50"><small>Es fácil y rápido. Puedes pagar online o en la entrega.</small></span>
+                    </div>
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <div class="row no-gutters">
+                    <div class="col-auto" >
+                    <img src="./img/jumbotron4.png" alt="..." style="max-width: 100px;"> 
+                    </div>
+                    <div class="col" style="max-width: 200px;">
+                        <span class="location-text"><strong>3. Recibe tu comida<br></strong></span>
+                        <span class="text-white-50"><small>El restaunrante entrega el pedido en tu puerta.</small></span>
+                    </div>
+                </div> 
+            </li>
+        </ul> 
+    </header>
+    <!-- modal Content-->
+    <div class="modal fade" id="contenido-modal" tabindex="-1" data-backdrop="estatic">
+        <div class="modal-dialog modal-dialog-scrollable modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">  
+                    <button class="close btn-danger" data-dismiss="modal">
+                        <span>&times;</span >
+                    </button>
+                    <h5 class="modal-title text-center">Ingresar a mi cuenta</h5> 
+                    <div class="row my-2 px-4 py-2">
+                        <button  type="button" class="btn-block btn-lg text-white border-0" style="background-color: #3b5998;font-size: 13px;"><strong>Continuar con Facebook</strong></button>
+                    </div>                           
+                    <hr class="mb-0">
+                    <p class="text-center text-muted " style="font-size: 10px;">O ingresar con tu email</p>
+                    <form action="" class="col-12">
+                        <input type="email" class="form-control"placeholder="Email"> 
+                        <input type="password" class="form-control"placeholder="Contraseña">
+                        
+                        <div class="ml-2 mr-1 py-2 custom-control-sm custom-control-inline" style="font-size: 13px;">
+                            <div class="col-4">
+                                <input type="checkbox" class="custom-control-input" id="Remember" />
+                                <label for="Remember" class="custom-control-label text-muted"><small>Recordarme</small></label>
+                            </div>                                
+                            <a href="/forgot?lite=true" data-auto="user_login_password_forgot" class="custom-control"><small>Olvidé mi contraseña</small></a>
+                        </div>                   
+                        <button  type="button" class="btn-block btn-lg bg-danger text-white border-danger" style="font-size: 16px;"><strong>Ingresar</strong></button>                              
+                    </form>
+                    <div class="text-center my-2 px-4 py-2" style="font-size: 12px;">
+                        <span>¿Todavía no tienes una cuenta? </span>
+                        <a href="/signup?lite=true&amp;go=https%3A%2F%2Fdomicilios.com%2F" data-auto="user_login_register">Regístrate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin del modal-->
+
+    <!--opiniones -->
+    <section class="container">
+        <div class="row justify-content-md-center">
+            <!--text-->
+            <div class="col-12 text-center">          
+                <h2 class="text-center"><strong>Nuestra comunidad</strong></h2>
+                <h3 class="text-center"><small>Descubre millones de opiniones y experiencias de usuarios</small></h3>
+            </div>
+            <!-- cards-->
+            <!-- cards 1-->
+            <article class="col-md-5 col-lg-3 mb-2 mb-md-0">
+                <div class="card text-white text-center" style="height: 266px;">
+                    <img src="./img/opi0.jpg" alt="" title="" height="70" width="70" class="rounded-circle mx-auto mt-4">
+                    <p class="card-text text-center"><small class="text-muted">Camila</small></p>
+                    <div class="badge">
+                        <span class="bg-warning rounded"><i class="fas fa-star"></i>  2.9 </span>
+                    </div>
+                    <p class="text-center text-dark">Un super servicio increible, la comida muy deliciosa.<br><small class="text-muted">Castillo Chino<br>5 sep, 2020</small></p> 
+                </div>                       
+            </article>
+            <!-- cards 2-->
+            <article class="col-md-5 col-lg-3 mb-2 mb-md-0">
+                <div class="card text-white text-center" style="height: 266px;">
+                    <img src="./img/opi2.png" alt="" title="" height="70" width="70" class="rounded-circle mx-auto mt-4">
+                    <p class="card-text text-center"><small class="text-muted">Juan</small></p>
+                    <div class="badge">
+                        <span class="bg-success rounded"><i class="fas fa-star"></i>  4.7 </span>
+                    </div>
+                    <p class="text-center text-dark">Excelente servicio y sazón, buenas porciones !!!!<br><small class="text-muted">Burger TNT<br>5 sep, 2020</small></p> 
+                </div>
+            </article>
+            <!-- cards 3-->
+            <article class="col-md-5 col-lg-3 mb-2 mb-md-0">
+              <div class="card text-white text-center" style="height: 266px;">
+                    <img src="./img/opi1.jpg" alt="" title="" height="70" width="70" class="rounded-circle mx-auto mt-4">
+                    <p class="card-text text-center"><small class="text-muted">Jairo</small></p>
+                    <div class="badge">
+                        <span class="bg-success rounded"><i class="fas fa-star"></i>      5.0 </span>
+                    </div>
+                    <p class="text-center text-dark">Un super la comida muy deliciosa.<br><small class="text-muted">Creps<br>5 Nov, 2020</small></p> 
+                </div>
+            </article>
+            <!-- cards 4-->
+            <article class="col-md-5 col-lg-3 mt-md-4 mt-lg-0 d-none d-lg-block">
+               <div class="card text-white text-center" style="height: 266px;">
+                    <img src="./img/opi3.jpg" alt="" title="" height="70" width="70" class="rounded-circle mx-auto mt-4">
+                    <p class="card-text text-center"><small class="text-muted">Juliana</small></p>
+                    <div class="badge">
+                        <span class="bg-danger rounded"><i class="fas fa-star"></i>  2.2 </span>
+                    </div>
+                    <p class="text-center text-dark">Un pésimo servicio.<br><small class="text-muted">Castillo Chino<br>23 oct, 2020</small></p> 
+                </div> 
+            </article>
+        </div>
+    </section>
+    
+    <!--articulos-->
+    <section class="d-flex flex-column justify-content-around align-items-center sectio">
+        <div class="card m-5" style="max-width: 1000px;">
+            <div class="row no-gutters">
+                <div class="col-md-6" >
+                    <img src="./img/art0.jpg" class="card-img" alt="..."> 
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h2 class="card-title"><strong>Delivery que satisface los sentidos</strong></h2>
+                        <p class="card-text text-muted"><small>Sabemos que amas la comida tanto como nosotros, por eso queremos llevártela a tu mesa, directo desde la cocina de los mejores restaurantes de Colombia.<br>Ingresa tu dirección, elige el restaurante, selecciona tu comida favorita ¡y ya! Pedir a domicilio tu comida nunca había sido tan fácil. ¡Con Domicilios.com lo único difícil será decidir qué comer!</small></p>                
+                    </div>
+                </div>
+            </div>           
+        </div>
+        <div class="card m-3" style="max-width: 500px;">
+            <div class="row">
+                <div class="col-6"><img src="./img/art1.png" class="card-img" alt="..."> 
+                </div>
+                <div class="col-6"> <!--Registate-->
+                    <h3 class="font-weight-normal">¿Quieres que tu restaurante cuente con nuestro servicio de delivery?</h3>
+                    <button class="button btn btn-danger btn-lg">Regista tu negocio</button>
+                </div>
+            </div>
+        </div>        
+    </section>
+    <!-- aplicaciones moviles -->
+    <div class="jumbotron jumbo-footer d-flex flex-column align-items-center justify-content-around text-white">
+        <h2 class="font-weight-bold">Descarga Domicilios en tu celular</h2>
+        <h4>+11 millones de usuarios ya piden comida online</h4>
+        <ul class="d-flex list-inline">
+            <li class="list-inline-items">
+                <a href="https://itunes.apple.com/es/app/domicilios-com-order-food/id611358746?mt=8&amp;none" target="_blank">
+                    <img src="https://live.pystatic.com/webassets/home/mob-button-appstore-es-c74943244bad65ca59d716e201037b7d.png" alt="Disponible en el App Store"/>
+                </a>
+            </li>
+            <li class="list-inline-items">
+                <a href="https://play.google.com/store/apps/details?id=com.clickdelivery.android.domiciliosbogota&amp;referrer=none" target="_blank">
+                    <img src="https://live.pystatic.com/webassets/home/mob-button-gplay-es-c7fa3bb120fd5789d0ee4ba411b6a17e.png" alt="Disponible en Google Play"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://appgallery.huawei.com/#/app/C102213269?none" target="_blank">
+                    <img src="https://live.pystatic.com/webassets/home/mob-button-huaweistore-es-6c216b44bdae6e7d17c2145e5f2e2971.png" alt="Disponible en Huaewi AppGallery">
+                </a>                
+            </li>                                  
+        </ul> 
+    </div>
+    <!--footer-->
+    <footer class="foot a-none pb-2"> 
+        <div class="row fila align-items-center justify-content-center my-0">     
+            <ul class="col list-unstyled"><!--1-->              
+                <li>
+                  <a class="a-none" href="">Nosotros</a>
+                </li>
+                <li>
+                  <a class="a-none" href="">Privacidad</a>
+                </li>
+                <li>
+                  <a class="a-none" href="">Condiciones</a>
+                </li>
+                <li>
+                  <a class="a-none" href="http://www.sic.gov.co/" target="_blank">Secretaría de Industria y Comercio</a>
+                </li>                  
+            </ul>
+            <ul class="col list-unstyled mr-4"><!--2--> 
+                <li>
+                  <a class="a-none" href="https://deliveryhero.wd3.myworkdayjobs.com/domicilios" target="_blank" rel="noopener noreferrer">Sé un DomiHéroe</a>              
+                </li>
+                <li>
+                  <button id="" class="btn btn-sm btn-outline-danger text-light" rel="nofollow"><small>Registra tu negocio</small></button>
+                </li>
+            </ul> 
+            <!--Top -->
+            <ul class="col list-unstyled"> <!--3-->              
+                <li>
+                  <a class="a-none" href="">top Cadenas</a>
+                </li>
+                <li>
+                  <a class="a-none" href="">top comidas</a>
+                </li>
+                <li>
+                  <a class="a-none" href="">top ciudades</a>                  
+            </ul>
+            <!--Content Social and Apps-->
+            <div class="col list-inline"><!--4--> 
+                <!--Social-->
+                <dl class="list-unstyled">
+                    <dd class="a-none">Síguenos en:</dd>
+                    <dd class="fb list-inline-item">
+                        <a href="https://www.facebook.com/DomiciliosCol/" target="_blank" class=" a-none facebook" title="Facebook">Facebook</a>
+                    </dd>
+                    <dd class="tw list-inline-item">
+                        <a href="https://twitter.com/DomiciliosCol" target="_blank" class="a-none twitter" title="Twitter">Twitter</a>
+                    </dd>
+                    <dd class="yt list-inline-item">
+                        <a href="https://www.youtube.com/user/DomiciliosBog" target="_blank" class=" a-none youtube" title="Youtube">Youtube</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col list-inline"> <!--5  Descargar app-->
+                <!--Apps-->                
+                <dl class="list-unstyled">
+                    <dd class="title">Descargar app</dd>
+                    <dd class="ic_iphone list-inline-item">
+                        <a href="https://itunes.apple.com/es/app/domicilios-com-order-food/id611358746?mt=8&amp;none" target="_blank" class="a-none iphone" title="iPhone">iPhone</a>
+                    </dd>
+                    <dd class="ic_android list-inline-item">
+                        <a href="https://play.google.com/store/apps/details?id=com.clickdelivery.android.domiciliosbogota&amp;referrer=none" target="_blank" class="a-none android" title="Android">Android</a>
+                    </dd>
+                </dl>                
+            </div>
+        </div> 
+        <hr style="background-color: pink"> 
+        <div class="row fila my-0">
+            <div class="col-3 justify-self-center columna">Domicilios © 2010-2020</div> 
+            <div class="col-7 justify-self-end columna">Espacio para ubicar las banderas de paises</div>
+        </div> 
+    </footer> 
+
+    
+    <!--JQuery-->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <!--Popper-->
+    <script src="./js/popper.min.js"></script>
+    <!--Bootstrap-->
+    <script src="./js/bootstrap.min.js"></script>    
+    <!--font awsome-->
+    <script src="https://kit.fontawesome.com/c6fd1a11d9.js" crossorigin="anonymous"></script>
+    <!--mi js-->
+    <script type="text/javascript" src="./js/js.js"></script>
+</body>
+</html>

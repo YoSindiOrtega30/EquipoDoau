@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navegación</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+        .jumbo{
+            background-image: url(" https://images.deliveryhero.io/image/pedidosya/header-backgrounds/mix-1.jpg");
+            background-size: 100%;            
+            width: 100vw;
+            height: 86vh;
+        }
+        .sectio{
+            margin:55px;
+            background-color: white;            
+        }
+        .jumbo-footer{ 
+            background-image: url("./img/jumbotron2.jpg");
+            height: 45vh;
+            width: 100vw;
+            margin-bottom: 0px;
+            border: none;
+        }       
+    </style>
+</head>
+<body >
+    <div class="jumbotron jumbo d-flex flex-column justify-content-center align-items-center text-white"> 
+        <!-- logo y navegación -->        
+        <nav class="container navbar navbar-expand-lg navbar-light position-absolute" style="top: 6px;">
+            <a class="navbar-brand" href="#">
+                <img src="./img/jumbotron1.jpg" alt="..." style="max-width: 120px;">                
+            </a>                                          
+            <div class="col-5 invisible"></div><!-- invisible para posicionar la navegacion a la derecha -->
+            <ul class="nav navbar-nav navbar-light" >
+                <li class="nav-item active">
+                    <a class="nav-link btn btn-sm btn-outline-light text-light" href="#"><strong>Regístra tu negocio </strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-reset" href="#">Ayuda en línea</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-reset" href="#">Regístrate</a>
+                </li>                            
+                <li class="nav-item">
+                    <a class="nav-link text-reset" tabindex="-1" aria-disabled="true" data-toggle="modal" data-target="#contenido-modal">Ingresar</a>
+                </li>
+            </ul>            
+        </nav>  
+        <!--fin de la navegación-->      
+    </div>
+</body>
+</html>

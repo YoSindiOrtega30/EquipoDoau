@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hearder_index</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+        .jumbo{
+            background-image: url(" https://images.deliveryhero.io/image/pedidosya/header-backgrounds/mix-1.jpg");
+            background-size: 100%;            
+            width: 100vw;
+            height: 86vh;
+        }
+        
+        .jumbo-footer{ 
+            background-image: url("./img/jumbotron2.jpg");
+            height: 45vh;
+            width: 100vw;
+            margin-bottom: 0px;
+            border: none;
+        }
+    </style>
+</head>
+<body >     
+    <div class="jumbotron jumbo d-flex flex-column justify-content-center align-items-center text-white"> 
+        <!-- información central-->        
+        <div class="container page-header position-absolute" style="top: 140px;"><!-- posicionamientos verticalmente position-absolute" style="top: 160px;"-->
+            <h2 class="font-weight-bold text-center">¿Dónde podemos servirte?</h2>  
+            <span class="location-text">Dirección de entrega</span>                   
+            <!-- Formulario -->                    
+            <div class="row">
+                <form action="" method="POST"> 
+                    <div class="form-row input-group">   
+                        <div class="col"> <!-- ciudad-->
+                            <label class="sr-only" for="inlineFormCustomSelect">Preference</label>
+                            <select class="custom-select" id="inlineFormCustomSelect">
+                                <option value="972">Armenia</option>
+                                <option value="996">Barrancabermeja</option>
+                                <option value="1009">Barranquilla</option>
+                                <option value="1086">Bello</option>
+                                <option value="975" selected="selected">Bogotá</option>
+                                <option value="1013">Bucaramanga</option>
+                                <option value="991">Cali</option>
+                                <option value="1126">Cañaveral</option>
+                                <option value="1005">Cartagena</option>
+                                <option value="982">Cartago</option>
+                                <option value="1742">Caucasia</option>
+                                <option value="979">Chia</option>
+                                <option value="1745">Cota</option>
+                                <option value="974">Cucuta</option>
+                                <option value="1740">Dos Quebradas</option>
+                                <option value="1101">Dosquebradas</option>
+                                <option value="1737">El tesoro</option>
+                                <option value="1089">Envigado</option>
+                                <option value="1122">Floridablanca</option>
+                                <option value="983">Funza</option>
+                                <option value="1463">Gaira/Rodadero</option>
+                                <option value="1008">Girardot</option>
+                                <option value="1123">Girón</option>
+                                <option value="981">Ibague</option>
+                                <option value="1087">Itagüi</option>
+                                <option value="1072">Jamundí</option>
+                                <option value="1000">La Calera</option>
+                                <option value="1739">Madrid</option>
+                                <option value="987">Manizales</option>
+                                <option value="980">Medellín</option>
+                                <option value="1007">Monteria</option>
+                                <option value="973">Mosquera</option>
+                                <option value="985">Neiva</option>
+                                <option value="1016">Palmira</option>
+                                <option value="1002">Pasto</option>
+                                <option value="1011">Pereira</option>
+                                <option value="1124">Piedecuesta</option>
+                                <option value="1103">Poblado</option>
+                                <option value="1003">Popayán</option>
+                                <option value="1743">Riohacha</option>
+                                <option value="1426">Rionegro</option>
+                                <option value="1088">Sabaneta</option>
+                                <option value="978">Santa Marta</option>
+                                <option value="998">Santa Rosa de Cabal</option>
+                                <option value="1744">Sincelejo</option>
+                                <option value="977">Soacha</option>
+                                <option value="986">Soledad</option>
+                                <option value="1104">Tesoro</option>
+                                <option value="1462">Tocancipá</option>
+                                <option value="1741">Tulua</option>
+                                <option value="1014">Tunja</option>
+                                <option value="997">Valledupar</option>
+                                <option value="984">Villavicencio</option>
+                                <option value="1077">Yumbo</option>+
+                            </select>
+                        </div>
+                        <div class="col"> <!-- indicación de direcc -->
+                            <label class="sr-only" for="inlineFormCustomSelect">Preference</label>
+                            <select class="custom-select" id="inlineFormCustomSelect">
+                                <option value="1">Calle</option>
+                                <option value="2">Carrera</option>
+                                <option value="3">Avenida</option>
+                                <option value="4">Avenida Carrera</option>
+                                <option value="5">Avenida Calle</option>
+                                <option value="6">Circular</option>
+                                <option value="7">Circunvalar</option>
+                                <option value="8">Diagonal</option>
+                                <option value="9">Manzana</option>
+                                <option value="10">Transversal</option>
+                                <option value="11">Vía</option> 
+                            </select>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="inlineFormInputName" placeholder="Dirección">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="inlineFormInputName" placeholder="#">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="inlineFormInputName" placeholder="Dirección">
+                        </div>                                                        
+                        <button class="btn btn-danger font-weight-bold" onclick="" type="button" >Buscar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- información inferior 1, 2 y3 -->  
+        <ul class="list-inline position-absolute" style="top: 460px;">
+            <li class="list-inline-item">
+                <div class="row no-gutters">
+                    <div class="col-auto" >
+                    <img src="./img/jumbotron2.png" alt="..." style="max-width: 100px;"> 
+                    </div>
+                    <div class="col-auto" style="max-width: 200px;">
+                        <span class="location-text"><strong>1.Elige tu comida<br></strong></span>
+                        <span class="text-white-50"><small>Más de 800 Restaurantes con delivery online</small></span>
+                    </div>
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <div class="row no-gutters">
+                    <div class="col-auto" >
+                    <img src="./img/jumbotron3.png" alt="..." style="max-width: 100px;"> 
+                    </div>
+                    <div class="col-auto" style="max-width: 200px;">
+                        <span class="location-text"><strong>2. Haz tu pedido<br></strong></span>
+                        <span class="text-white-50"><small>Es fácil y rápido. Puedes pagar online o en la entrega.</small></span>
+                    </div>
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <div class="row no-gutters">
+                    <div class="col-auto" >
+                    <img src="./img/jumbotron4.png" alt="..." style="max-width: 100px;"> 
+                    </div>
+                    <div class="col" style="max-width: 200px;">
+                        <span class="location-text"><strong>3. Recibe tu comida<br></strong></span>
+                        <span class="text-white-50"><small>El restaunrante entrega el pedido en tu puerta.</small></span>
+                    </div>
+                </div> 
+            </li>
+        </ul> 
+        
+    </div>
+</body>
+</html>

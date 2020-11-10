@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--INCLUIR MENU IZQUIERDO y migas d pan-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Recibe en casa | Doau</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/css.css">
+</head>
+<body>
+	<!--header-->
+	<header class="header py-3">
+		<div class="container">
+			<!-- navegación -->
+			<nav class="row text-white justify-content-between align-items-center">
+			  <!--logo -->
+			  <a href="" class="col-12 col-md-auto text-reset text-center mb-3 mb-md-0">
+				<img src="./img/opi2.png" alt="Logo" class="navbar-brand" style="width: 40px;">
+			  </a>
+			  <!--Anclas-->
+			  <div class="col-12 col-md-auto d-flex flex-wrap justify-content-around">
+					<a href="#" class="text-reset btn btn-sm btn-outline-light pr-3"><strong>Regístra tu negocio </strong></a>
+					<a href="#" class="text-reset pr-3">Ayuda en línea</a>
+					<a href="#" class="text-reset pr-3">Regístrate</a>
+					<a href="" class="text-reset pr-3"tabindex="-1" aria-disabled="true" data-toggle="modal" data-target="#contenido-modal">Ingresar</a>					
+			  </div>
+			</nav>
+		</div>
+		<!-- información inferior 1, 2 y3 -->
+		<div class="row align-items-center justify-content-around text-white mt-4">
+			<ul class="list-inline">
+				<li class="list-inline-item">
+					<div class="row no-gutters">
+						<div class="col-auto" >
+							<img src="./img/jumbotron2.png" alt="..." style="max-width: 100px;"> 
+						</div>
+						<div class="col-auto" style="max-width: 200px;">
+							<span class="location-text"><strong>1.Cambiar por migas<br></strong></span>					
+						</div>
+					</div>
+				</li>
+				<li class="list-inline-item">
+					<div class="row no-gutters">
+						<div class="col-auto" >
+							<img src="./img/jumbotron3.png" alt="..." style="max-width: 100px;"> 
+						</div>
+						<div class="col-auto" style="max-width: 200px;">
+							<span class="location-text"><strong>de pan<br></strong></span>
+						</div>
+					</div>
+				</li>
+				<li class="list-inline-item">
+					<div class="row no-gutters">
+						<div class="col-auto" >
+							<img src="./img/jumbotron4.png" alt="..." style="max-width: 100px;"> 
+						</div>
+						<div class="col" style="max-width: 200px;">
+							<span class="location-text"><strong>3. Recibe tu comida<br></strong></span>
+						</div>
+					</div> 
+				</li>
+			</ul>
+		</div>
+	</header>
+	<!--Contenido-->
+	<section class="container">
+		<div class="row">
+			<div class="col-2 col-md-3">				
+				<!--iconos redorndos-->
+                <ul class="list-unstyled">
+                    <li class=" selected" data-businesstype="RESTAURANT">
+                        <img src="./img/icon/restaurant.png" class="RESTAURANT mb-2 mr-2" title="Restaurantes" style="width:30px;" alt="restaurant">                      	
+                        <span class="d-none d-sm-inline">Restaurantes</span>
+                    </li>                                                   
+                    <li class="" data-businesstype="GROCERIES">
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;lng=-74.03890779999999&amp;bc=none&amp;lat=4.7013845&amp;doorNumber=17&amp;bt=GROCERIES" rel="nofollow" data-key="Mercados">
+                        <img src="./img/icon/supermarket.png" class="RESTAURANT mb-2 mr-2" title="Restaurantes" style="width:30px;" alt="restaurant">                             
+                        <span class="d-none d-md-inline">Mercados</span>
+                        </a>
+                    </li>
+                    <li class="" data-businesstype="DRINKS">
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;lng=-74.03890779999999&amp;bc=none&amp;lat=4.7013845&amp;doorNumber=17&amp;bt=DRINKS" rel="nofollow" data-key="Bebidas">
+                        <img class="DRINKS mb-2 mr-2" src="./img/icon/bebidas.png" alt="" title="Bebidas" style="width:30px;">
+                        <span class="d-none d-md-inline">Bebidas</span>
+                        </a>
+                    </li>
+                    <li class="" data-businesstype="PHARMACY">
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;lng=-74.03890779999999&amp;bc=none&amp;lat=4.7013845&amp;doorNumber=17&amp;bt=PHARMACY" rel="nofollow" data-key="Droguerías">
+                        <img class="PHARMACY mb-2 mr-2" src="./img/icon/farmacias.png" alt="" title="farmacia" style="width:30px;">
+                        <span class="d-none d-md-inline">Droguerías</span>
+                        </a>
+                    </li>
+                    <li class="" data-businesstype="PETS">
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;lng=-74.03890779999999&amp;bc=none&amp;lat=4.7013845&amp;doorNumber=17&amp;bt=PETS" rel="nofollow" data-key="Mascotas">
+                        <img class="PETS mb-2 mr-2" src="./img/icon/mascotas.png" alt="" title="PETS" style="width:30px;"><span class="d-none d-md-inline"> Mascotas</span>
+                        </a>
+                    </li>
+                    <li class="" data-businesstype="COFFEE">
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;lng=-74.03890779999999&amp;bc=none&amp;lat=4.7013845&amp;doorNumber=17&amp;bt=COFFEE" rel="nofollow" data-key="Café &amp; Deli">
+                        <img class="COFFEE mb-2 mr-2" src="./img/icon/cafe-deli.png" alt="" title="COFFEE" style="width:30px;">
+                        <span class="d-none d-md-inline">Café &amp; Deli</span>    
+                        </a>
+                    </li>              	
+                </ul>
+                <!--filtros-->
+                <span class="filters_text">Filtros</span>
+                <ul class="list-unstyled justify-items-start" style="font-size: 11px;">
+                    <li>
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;lng=-74.03890779999999&amp;bc=none&amp;lat=4.7013845&amp;doorNumber=17&amp;channels=cupon" rel="nofollow" data-key="cupon">
+                            <div class="" >
+                                <img src="https://img.pystatic.com/channels/co/cupon/icon-3c144b62-5a2b-4f3a-ae1c-6c56b2af63aa.png" alt="" title="cupon" class="img-filtro "><span>Cup&oacute;n</span>
+                            <i class="countFilters">503</i>
+                            </div>                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;lng=-74.03890779999999&amp;bc=none&amp;lat=4.7013845&amp;doorNumber=17&amp;channels=halloween-2020" rel="nofollow" data-key="halloween-2020">
+                            <div class="">
+                                <img src="https://img.pystatic.com/channels/co/halloween-2020/icon-d69a4591-362a-49ba-b880-e740892e750e.jpg" alt="" class="img-filtro halloween-2020" title="halloween-2020"><span>halloweeo 2020</span><i class="countFilters">20</i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;lng=-74.03890779999999&amp;bc=none&amp;lat=4.7013845&amp;doorNumber=17&amp;channels=desayunos" rel="nofollow" data-key="desayunos">
+                            <div class="">
+                                <img src="https://img.pystatic.com/channels/co/desayunos/icon-7f1d0896-a1a9-4d81-b11d-a43fed1ca70e.jpg" alt="" class="img-filtro desayunos" title="desayunos"><span>Desayunos</span>
+                            <i class="countFilters">47</i>
+                            </div>                            
+                        </a>
+                    </li>
+					<li>
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;lng=-74.03890779999999&amp;bc=none&amp;lat=4.7013845&amp;doorNumber=17&amp;channels=online-bar" rel="nofollow" data-key="online-bar">
+                            <div class="">
+                                <img src="https://img.pystatic.com/channels/co/online-bar/icon-975f68fe-5e68-4aba-b48b-0b7e328cfd2a.jpg" alt="" class="img-filtro online-bar" title="online-bar"><span>online bar</span><i class="countFilters">19</i>
+                            </div>                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;lng=-74.03890779999999&amp;bc=none&amp;lat=4.7013845&amp;doorNumber=17&amp;channels=combo-15" rel="nofollow" data-key="combo-15">
+                            <div>
+                                <img src="https://img.pystatic.com/channels/co/combo-15/icon-ae72aafd-4c16-41c9-b496-8a6b9679d128.jpg" alt="" class="img-filtro combo-15" title="combo-15" ><span>combo 15</span><i class="countFilters">14</i>
+                            </div>                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;lng=-74.03890779999999&amp;bc=none&amp;lat=4.7013845&amp;doorNumber=17&amp;channels=destacados" rel="nofollow" data-key="destacados">
+                            <div>
+                                <img src="https://img.pystatic.com/channels/co/destacados/icon-7aaec3cd-4aad-4b70-8812-b60dd9f295d7.jpg" class="img-filtro" ><span>destacados</span><i class="countFilters">4</i>
+                            </div>                            
+                        </a>
+                    </li>  
+                    <li>
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;lng=-74.03890779999999&amp;bc=none&amp;lat=4.7013845&amp;doorNumber=17&amp;channels=menus-pop-10900" rel="nofollow" data-key="menus-pop-10900" >
+                            <div>
+                                <img src="https://img.pystatic.com/channels/co/menus-pop-10900/icon-cc9d126b-c15d-41c5-a85e-ef99f8d90c4f.jpg" class="img-filtro" ><span>men&uacute;s POP 10.900</span><i class="countFilters">2</i>
+                            </div>                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;lng=-74.03890779999999&amp;bc=none&amp;lat=4.7013845&amp;doorNumber=17&amp;channels=cocktails-to-go-diageo" rel="nofollow" data-key="cocktails-to-go-diageo" >
+                            <div>
+                                <img src="https://img.pystatic.com/channels/co/cocktails-to-go-diageo/icon-141b2860-093f-4b37-9969-a6a306013bc9.jpg" class="img-filtro" ><span>Cocktails to go</span><i class="countFilters">1</i>
+                            </div>                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;lng=-74.03890779999999&amp;bc=none&amp;lat=4.7013845&amp;doorNumber=17&amp;channels=domiclub" rel="nofollow" data-key="domiclub">
+                            <div>
+                                <img src="https://img.pystatic.com/channels/co/domiclub/icon-b0fa7a5b-9c42-448f-803f-3ce2667f4c0e.jpg" class="img-filtro" ><span>domiclub</span><i class="countFilters">174</i>
+                            </div>                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;lng=-74.03890779999999&amp;bc=none&amp;lat=4.7013845&amp;doorNumber=17&amp;channels=tracking" rel="nofollow" data-key="tracking">
+                            <div>
+                                <img src="https://img.pystatic.com/channels/co/delivery-por-domicilios/icon-b9be66d1-cbfd-4487-b91f-7e4cea595b12.png" class="img-filtro" ><span>Entrega por Domicilios</span><i class="countFilters">402</i>
+                            </div>                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;lng=-74.03890779999999&amp;bc=none&amp;lat=4.7013845&amp;doorNumber=17&amp;channels=postobon" rel="nofollow" data-key="postobon">
+                            <div>
+                                <img src="https://img.pystatic.com/channels/co/delivery-por-domicilios/icon-b9be66d1-cbfd-4487-b91f-7e4cea595b12.png"class="img-filtro" ><span>Postob&oacute;n</span><i class="countFilters">28</i>
+                            </div>                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;lng=-74.03890779999999&amp;bc=none&amp;lat=4.7013845&amp;doorNumber=17&amp;channels=puntos-colombia" rel="nofollow" data-key="puntos-colombia">
+                            <div>
+                                <img src="https://img.pystatic.com/channels/co/puntos-colombia/icon-57e12d1f-45bf-4993-ad17-d2ecb3c8286d.jpg" class="img-filtro" ><span>Puntos Colombia</span>                            <i class="countFilters">220</i>
+                            </div>                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;lng=-74.03890779999999&amp;bc=none&amp;lat=4.7013845&amp;doorNumber=17&amp;channels=primiparos" rel="nofollow" data-key="primiparos">
+                            <div>
+                                <img src="https://img.pystatic.com/channels/co/primiparos/icon-b6e5ab8a-7241-4c06-b158-bed51c9e6696.jpg" class="img-filtro" ><span>Nuevos</span> <i class="countFilters">33</i>
+                            </div>                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;doorNumber=17&amp;lat=4.7013845&amp;lng=-74.03890779999999&amp;bc=none&amp;paymentMethods=112&amp;isOnline=1&amp;channels=pago-online" rel="nofollow" data-key="online_payment">
+                            <div>
+                                <img src="https://img.pystatic.com/channels/co/pago-online/icon-d50a73ff-06fb-4dd1-aa67-91e432f02bba.png" class="img-filtro" >
+                                <span>Tarjeta</span> <i class="countFilters">554</i>
+                            </div>                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;lng=-74.03890779999999&amp;bc=none&amp;lat=4.7013845&amp;doorNumber=17&amp;channels=menos-de-diez" rel="nofollow" data-key="menos-de-diez">
+                            <div>
+                                <img src="https://img.pystatic.com/channels/co/menos-de-diez/icon-e6971546-fbab-4147-aa11-b7754e33d54b.jpg" class="img-filtro" ><span>menos de</span>                            <i class="countFilters">60</i>
+                            </div>                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;lng=-74.03890779999999&amp;bc=none&amp;lat=4.7013845&amp;doorNumber=17&amp;channels=discount" rel="nofollow" data-key="discount">
+                            <div>
+                                <img src="https://img.pystatic.com/channels/co/descuentos-hoy/icon-ac12d4c9-35f4-4790-9e66-c6178c1666ad.jpg"class="img-filtro" ><span>Descuentos</span>                            <i class="countFilters">34</i>
+                            </div>                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;lng=-74.03890779999999&amp;bc=none&amp;lat=4.7013845&amp;doorNumber=17&amp;channels=descubrir" rel="nofollow" data-key="descubrir">
+                            <div>
+                                <img src="https://img.pystatic.com/channels/co/restaurantes-para-descubrir/icon-97d9ea30-22e5-48ae-bca8-4b50c5d781fe.png" class="img-filtro" >
+                            	<span>Restaurantes para descubrir</span>                            <i class="countFilters">9</i>
+                            </div>                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;lng=-74.03890779999999&amp;bc=none&amp;lat=4.7013845&amp;doorNumber=17&amp;channels=exclusivos" rel="nofollow" data-key="exclusivos">
+                            <div>
+                                <img src="https://img.pystatic.com/channels/co/exclusivos-de-domicilios/icon-b851c8fa-ebe0-45c6-b4fa-ef0088705c4c.png" class="img-filtro" >
+                                <span>Exclusivos</span><i class="countFilters">13</i>
+                            </div>                            
+                        </a>
+                    </li>  
+                </ul>
+                <!--Métodos de pago-->  
+                <span class="filters_text">Métodos de pago</span>                
+                <span><small>Pago online</small></span>
+                <dl class="list-unstyled" style="font-size: 13px;">
+                    <li data-auto="">
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;doorNumber=17&amp;lat=4.7013845&amp;lng=-74.03890779999999&amp;bc=none&amp;paymentMethods=112" id="112" rel="nofollow">
+                            <span>Pago online</span>
+                        </a>
+                    </li>                   
+                <span>Pago en la entrega</span>                    
+                    <li data-auto="">
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;doorNumber=17&amp;lat=4.7013845&amp;lng=-74.03890779999999&amp;bc=none&amp;paymentMethods=1" id="1" rel="nofollow">
+                            <span>Efectivo</span>
+                        </a>
+                    </li>                
+                    <li data-auto="">
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;doorNumber=17&amp;lat=4.7013845&amp;lng=-74.03890779999999&amp;bc=none&amp;paymentMethods=107" id="107" rel="nofollow">
+                            <span>Tarjeta de Débito</span>
+                        </a>
+                    </li>                    
+                    <li data-auto="">
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;doorNumber=17&amp;lat=4.7013845&amp;lng=-74.03890779999999&amp;bc=none&amp;paymentMethods=6" id="6" rel="nofollow">
+                            <span>Tarjeta de crédito</span>
+                        </a>
+                    </li>
+                
+                    <li data-auto="">
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;doorNumber=17&amp;lat=4.7013845&amp;lng=-74.03890779999999&amp;bc=none&amp;paymentMethods=36" id="36" rel="nofollow">
+                            <span>American Express</span>
+                        </a>
+                    </li>
+                
+                    <li data-auto="">
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;doorNumber=17&amp;lat=4.7013845&amp;lng=-74.03890779999999&amp;bc=none&amp;paymentMethods=108" id="108" rel="nofollow">
+                            <span>Débito American Express</span>
+                        </a>
+                    </li>
+                
+                    <li data-auto="">
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;doorNumber=17&amp;lat=4.7013845&amp;lng=-74.03890779999999&amp;bc=none&amp;paymentMethods=24" id="24" rel="nofollow">
+                            <span>Sodexo Pass</span>
+                        </a>
+                    </li>
+                
+                    <li data-auto="">
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;doorNumber=17&amp;lat=4.7013845&amp;lng=-74.03890779999999&amp;bc=none&amp;paymentMethods=18" id="18" rel="nofollow">
+                            <span>Visa</span>
+                        </a>
+                    </li>
+                
+                    <li data-auto="">
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;doorNumber=17&amp;lat=4.7013845&amp;lng=-74.03890779999999&amp;bc=none&amp;paymentMethods=19" id="19" rel="nofollow">
+                            <span>Mastercard</span>
+                        </a>
+                    </li>
+                
+                    <li data-auto="">
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;doorNumber=17&amp;lat=4.7013845&amp;lng=-74.03890779999999&amp;bc=none&amp;paymentMethods=20" id="20" rel="nofollow">
+                            <span>Visa Electron</span>
+                        </a>
+                    </li>
+                
+                    <li data-auto="">
+                        <a href="https://domicilios.com/restaurantes/bogota?a=+123+17&amp;doorNumber=17&amp;lat=4.7013845&amp;lng=-74.03890779999999&amp;bc=none&amp;paymentMethods=21" id="21" rel="nofollow">
+                            <span>Maestro</span>
+                        </a>
+                    </li>   
+                </dl>                
+  			</div>
+			<div class="col-10 col-md-9">
+				<!--Slider de sugerido-->				
+				<div id="Sugerido">
+					<span class="h5"><strong>Sugerencias para tí</strong></span>
+					<div class="container row my-2 d-flex justify-content-center">    
+						<div id="recipeCarousel" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner" role="listbox"> 
+								<div class="carousel-item active"><!--1-->
+									<div class="card">
+									  <div class="row">
+										<div class="col-md-6">
+										  <img src="./img/cb1.jpg" alt="..." style="max-width: 190px;">
+										</div>
+										<div class="col-md-6">
+										    <div class="card-body">
+												<h6 class="card-title">Título </h6>
+												<h7 class="text-center"><small class="text-muted">Descripción. subtitulo</small></h7>
+												<p class="text-left">$ 10000</p>
+											</div>
+										</div>
+									  </div>
+									</div>
+								</div>
+								<div class="carousel-item"> <!--2-->
+									<div class="card">
+									  <div class="row">
+										<div class="col-md-6">
+										  	<img src="./img/cb2.jpg" alt="..." style="max-width: 190px;">
+										</div>
+										<div class="col-md-6">
+											<div class="card-body">
+												<h6 class="card-title">Título </h6>
+												<h7 class="text-center"><small class="text-muted">Descripción. subtitulo</small></h7>
+												<p class="text-left">$ 10000</p>
+											</div>
+										</div>
+									  </div>
+									</div>
+								</div> 
+								<div class="carousel-item"> <!--3-->
+									<div class="card">
+									  <div class="row">
+										<div class="col-md-6">
+										  <img src="./img/cb3.jpg" alt="..." style="max-width: 190px;">
+										</div>
+										<div class="col-md-6">
+										  	<div class="card-body">
+												<h6 class="card-title">Título </h6>
+												<h7 class="text-center"><small class="text-muted">Descripción. subtitulo</small></h7>
+												<p class="text-left">$ 10000</p>
+											</div>
+										</div>
+									  </div>
+									</div>
+								</div> 
+								<div class="carousel-item"> <!--4-->
+									<div class="card">
+									  <div class="row">
+										<div class="col-md-6">
+										  <img src="./img/cb4.png" alt="..." style="max-width: 190px;">
+										</div>
+										<div class="col-md-6">
+										  	<div class="card-body">
+												<h6 class="card-title">Título </h6>
+												<h7 class="text-center"><small class="text-muted">Descripción. subtitulo</small></h7>
+												<p class="text-left">$ 10000</p>
+											</div>
+										</div>
+									  </div>
+									</div>
+								</div> 
+								<div class="carousel-item"> <!--5-->
+									<div class="card">
+									  <div class="row">
+										<div class="col-md-6">
+										  <img src="./img/cb5.jpg" alt="..." style="max-width: 190px;">
+										</div>
+										<div class="col-md-6">
+										  <div class="card-body">
+											<h6 class="card-title">Título </h6>
+											<h7 class="text-center"><small class="text-muted">Descripción. subtitulo</small></h7>
+											<p class="text-left">$ 10000</p>                                         
+										  </div>
+										</div>
+									  </div>
+									</div>
+								</div> 
+								<div class="carousel-item"> <!--6-->
+									<div class="card">
+									  <div class="row">
+										<div class="col-md-6">
+										  <img src="./img/cb6.jpg" alt="..." style="max-width: 190px;">
+										</div>
+										<div class="col-md-6">
+										  	<div class="card-body">
+												<h6 class="card-title">Título </h6>
+												<h7 class="text-center"><small class="text-muted">Descripción. subtitulo</small></h7>
+												<p class="text-left">$ 10000</p>
+											</div>
+										</div>
+									  </div>
+									</div>
+								</div>                               
+							</div>			
+							<a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+								<span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>		
+				</div>
+				<!--opciones de ver y buscar-->
+				<div class="form-inline my-4">		
+					<!--ver , lista y mapa-->
+					<div class="form-group mr-2">
+						<span>Ver:</span>
+						<button class="btn btn-light"><i class="fas fa-list"></i></button>
+						<button class="btn btn-light"><i class="fas fa-map"></i></button>
+					</div>
+					<!--ordenar-->
+					<div class="form-group ml-2">
+						<label class="mr-2" for="inlineForm">Ordenar:</label>
+			          	<select class="custom-select" id="inlineForm">
+							<option value="1">Más cercanos</option>
+							<option value="2">Mejor puntuados</option>
+							<option value="3">Menor tiempo de entrega</option>
+							<option value="4">Menor costo de envío</option>
+							<option value="5">Más nuevos</option>
+							<option value="6">Alfabéticamente</option>
+			            </select>
+					</div>
+					<!--Buscar establ. y lupa-->
+					<div class="input-group-append">
+						<input type="text" name="" class="form-control" placeholder="Buscar establecimiento">
+						<button class="btn btn-light">
+							<i class="fas fa-search"></i>
+						</button>						
+					</div>				
+				</div>		
+				<hr>
+				<!--resultados-->
+				<div class="align-items-center justify-content-center">
+					<!-- como lista-->
+					<ul class="col-12">
+						<!--cada li es una tarjeta-->
+						<li class="media mb-2"><!--1-->	
+							<img src="./img/logos/panya.jpg" alt="pan_ya" class="media-object-img">
+							<div class="media-body">
+								<h6 class=""><a href="https://domicilios.com/restaurantes/bogota/pan-pa%E2%80%99-ya-unicentro-menu" title="Pan Pa’ Ya! Unicentro" class="arrivalName">Pan Pa’ Ya! Unicentro</a></h6>
+								<!--detalles de calificación -->
+								<ul class="list-group list-group-horizontal list-unstyled">
+									<li class="pr-3">
+										<span class="bg-success rounded">  4.8 </span><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+									</li>
+									<li>
+									  <p>56 opiniones</p>
+									</li>
+								</ul>
+								<!--detalles de servicio y compra -->
+								<div class="d-flex"> 
+									<ul class="list-group list-group-horizontal list-unstyled m-0">
+										<li class="pr-3"><h6>30-45 min</h6><small class="text-muted">tiempo de entrega</small> </li>
+										<li class="pr-3"><h6>$3.900</h6><small class="text-muted"> costo de envío </small></li>
+										<li class="pr-4"><h6>$9.900</h6> <small class="text-muted">pedido mínimo</small>   </li>
+										<li class="pl-4">
+											<div class="btn float-right">
+												<a href="https://domicilios.com/restaurantes/bogota/pan-pa%E2%80%99-ya-unicentro-menu" class="btn btn-danger btn-sm"><strong>Ver productos</strong></a>
+											</div>
+										</li>
+									</ul>
+								</div> <!-- formas de pago -->
+								<ul class="list-group list-group-horizontal list-unstyled">    
+									<li class="px-2"> <img src="./img/pay/pay-visa.png" alt="Visa" title="Visa" height="22">
+									</li>
+									<li class="px-2"><img src="./img/pay/pay-mastercard.png" alt="Mastercard" title="Mastercard" height="22">
+									</li>
+									<li class="px-2"><img src="./img/pay/pay-american-express.png" alt="American Express" title=" American Express" height="22">
+									</li>
+									<li class="px-2"> <img src="./img/pay/pay-diners.png" alt="Diners" title="Diners" height="22">
+									</li>  
+					          	</ul>
+					        </div>
+						</li>						<hr>						
+						<li class="media mb-2"><!--2-->	
+							<img src="./img/logos/bawaba.jpg" alt="bawaba" class="media-object-img">
+							<div class="media-body">
+								<h6 class=""><a href="https://domicilios.com/restaurantes/bogota/pan-pa%E2%80%99-ya-unicentro-menu" title="Pan Pa’ Ya! Unicentro" class="arrivalName">Pan Pa’ Ya! Unicentro</a></h6>
+								<!--detalles de calificación -->
+								<ul class="list-group list-group-horizontal list-unstyled">
+									<li class="pr-3">
+										<span class="bg-success rounded">4.0 </span><i class="fas fa-star text-warning"></i>  
+									</li>
+									<li>
+									  <p>56 opiniones</p>
+									</li>
+								</ul>
+								<!--detalles de servicio y compra -->
+								<div class="d-flex"> 
+									<ul class="list-group list-group-horizontal list-unstyled m-0">
+										<li class="pr-3"><h6>30-45 min</h6><small class="text-muted">tiempo de entrega</small> </li>
+										<li class="pr-3"><h6>$3.900</h6><small class="text-muted"> costo de envío </small></li>
+										<li class="pr-4"><h6>$9.900</h6> <small class="text-muted">pedido mínimo</small>   </li>
+										<li class="pl-4">
+											<div class="btn float-right">
+												<a href="https://domicilios.com/restaurantes/bogota/pan-pa%E2%80%99-ya-unicentro-menu" class="btn btn-danger btn-sm"><strong>Ver productos</strong></a>
+											</div>
+										</li>
+									</ul>
+								</div><!-- formas de pago -->
+								<ul class="list-group list-group-horizontal list-unstyled">    
+									<li class="px-2"> <img src="./img/pay/pay-visa.png" alt="Visa" title="Visa" height="22">
+									</li>
+									<li class="px-2"><img src="./img/pay/pay-mastercard.png" alt="Mastercard" title="Mastercard" height="22">
+									</li>
+									<li class="px-2"><img src="./img/pay/pay-american-express.png" alt="American Express" title=" American Express" height="22">
+									</li>
+									<li class="px-2"> <img src="./img/pay/pay-diners.png" alt="Diners" title="Diners" height="22">
+									</li>  
+								</ul>
+							</div>
+						</li>                     <hr>
+						<li class="media mb-2"><!--3-->	
+							<img src="./img/logos/food.jpg" alt="pan_ya" class="media-object-img">
+							<div class="media-body">
+								<h6 class=""><a href="https://domicilios.com/restaurantes/bogota/pan-pa%E2%80%99-ya-unicentro-menu" title="Pan Pa’ Ya! Unicentro" class="arrivalName">Pan Pa’ Ya! Unicentro</a></h6>
+								<!--detalles de calificación -->
+								<ul class="list-group list-group-horizontal list-unstyled">
+									<li class="pr-3">									
+										<span class="bg-success rounded">  3.0 </span><i class="fas fa-star text-warning"></i>
+									</li>
+									<li>
+									  <p>56 opiniones</p>
+									</li>
+								</ul>
+								<!--detalles de servicio y compra -->
+								<div class="d-flex"> 
+									<ul class="list-group list-group-horizontal list-unstyled m-0">
+										<li class="pr-3"><h6>30-45 min</h6><small class="text-muted">tiempo de entrega</small> </li>
+										<li class="pr-3"><h6>$3.900</h6><small class="text-muted"> costo de envío </small></li>
+										<li class="pr-4"><h6>$9.900</h6> <small class="text-muted">pedido mínimo</small>   </li>
+										<li class="pl-4">
+											<div class="btn float-right">
+												<a href="https://domicilios.com/restaurantes/bogota/pan-pa%E2%80%99-ya-unicentro-menu" class="btn btn-danger btn-sm"><strong>Ver productos</strong></a>
+											</div>
+										</li>
+									</ul>
+								</div><!-- formas de pago -->
+								<ul class="list-group list-group-horizontal list-unstyled">    
+									<li class="px-2"> <img src="./img/pay/pay-visa.png" alt="Visa" title="Visa" height="22">
+									</li>
+									<li class="px-2"><img src="./img/pay/pay-mastercard.png" alt="Mastercard" title="Mastercard" height="22">
+									</li>
+									<li class="px-2"><img src="./img/pay/pay-american-express.png" alt="American Express" title=" American Express" height="22">
+									</li>
+									<li class="px-2"> <img src="./img/pay/pay-diners.png" alt="Diners" title="Diners" height="22">
+									</li>  
+              					</ul>
+              				</div>
+						</li> 					<hr>						
+						<li class="media mb-2"><!--4-->	
+							<img src="./img/logos/portal-colombia.png" alt="pan_ya" class="media-object-img">
+							<div class="media-body">
+								<h6 class=""><a href="https://domicilios.com/restaurantes/bogota/pan-pa%E2%80%99-ya-unicentro-menu" title="Pan Pa’ Ya! Unicentro" class="arrivalName">Pan Pa’ Ya! Unicentro</a></h6>
+								<!--detalles de calificación -->
+								<ul class="list-group list-group-horizontal list-unstyled">
+									<li class="pr-3" >
+										<span class="bg-success rounded">  5.0 </span><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+									</li>
+									<li>
+									  <p>56 opiniones</p>
+									</li>
+								</ul>
+								<!--detalles de servicio y compra -->
+								<div class="d-flex"> 
+									<ul class="list-group list-group-horizontal list-unstyled m-0">
+										<li class="pr-3"><h6>30-45 min</h6><small class="text-muted">tiempo de entrega</small> </li>
+										<li class="pr-3"><h6>$3.900</h6><small class="text-muted"> costo de envío </small></li>
+										<li class="pr-4"><h6>$9.900</h6> <small class="text-muted">pedido mínimo</small>   </li>
+										<li class="pl-4">
+											<div class="btn float-right">
+												<a href="https://domicilios.com/restaurantes/bogota/pan-pa%E2%80%99-ya-unicentro-menu" class="btn btn-danger btn-sm"><strong>Ver productos</strong></a>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<ul class="list-group list-group-horizontal list-unstyled">    
+									<li class="px-2"> <img src="./img/pay/pay-visa.png" alt="Visa" title="Visa" height="22">
+									</li>
+									<li class="px-2"><img src="./img/pay/pay-mastercard.png" alt="Mastercard" title="Mastercard" height="22">
+									</li>
+									<li class="px-2"><img src="./img/pay/pay-american-express.png" alt="American Express" title=" American Express" height="22">
+									</li>
+									<li class="px-2"> <img src="./img/pay/pay-diners.png" alt="Diners" title="Diners" height="22">
+									</li>  
+              					</ul>
+              				</div>
+						</li>						<hr>
+						<li class="media mb-4 pb-4"><!--5-->	
+							<img src="./img/logos/jacinta.jpg" alt="pan_ya" class="media-object-img">
+							<div class="media-body">
+								<h6 class=""><a href="https://domicilios.com/restaurantes/bogota/pan-pa%E2%80%99-ya-unicentro-menu" title="Pan Pa’ Ya! Unicentro" class="arrivalName">Pan Pa’ Ya! Unicentro</a></h6>
+								<!--detalles de calificación -->
+								<ul class="list-group list-group-horizontal list-unstyled">
+									<li class="pr-3">
+										<span class="bg-success rounded">  4.0 </span><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+									</li>								
+									<li>
+									  <p>56 opiniones</p>
+									</li>
+								</ul><!--detalles de servicio y compra -->								
+								<div class="d-flex"> 
+									<ul class="list-group list-group-horizontal list-unstyled m-0">
+										<li class="pr-3"><h6>30-45 min</h6><small class="text-muted">tiempo de entrega</small> </li>
+										<li class="pr-3"><h6>$3.900</h6><small class="text-muted"> costo de envío </small></li>
+										<li class="pr-4"><h6>$9.900</h6> <small class="text-muted">pedido mínimo</small>   </li>
+										<li class="pl-4">
+											<div class="btn float-right">
+												<a href="https://domicilios.com/restaurantes/bogota/pan-pa%E2%80%99-ya-unicentro-menu" class="btn btn-danger btn-sm"><strong>Ver productos</strong></a>
+											</div>
+										</li>
+									</ul>
+								</div><!-- formas de pago -->
+								<ul class="list-group list-group-horizontal list-unstyled">    
+									<li class="px-2"> <img src="./img/pay/pay-visa.png" alt="Visa" title="Visa" height="22">
+									</li>
+									<li class="px-2"><img src="./img/pay/pay-mastercard.png" alt="Mastercard" title="Mastercard" height="22">
+									</li>
+									<li class="px-2"><img src="./img/pay/pay-american-express.png" alt="American Express" title=" American Express" height="22">
+									</li>
+									<li class="px-2"> <img src="./img/pay/pay-diners.png" alt="Diners" title="Diners" height="22">
+									</li>  
+              					</ul>
+              				</div>
+						</li><!--fin de la 5 tajeta-->	
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- modal Content -->
+    <div class="modal fade" id="contenido-modal" tabindex="-1" data-backdrop="estatic">
+        <div class="modal-dialog modal-dialog-scrollable modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">  
+                    <button class="close btn-danger" data-dismiss="modal">
+                        <span>&times;</span >
+                    </button>
+                    <h5 class="modal-title text-center">Ingresar a mi cuenta</h5> 
+                    <div class="row my-2 px-4 py-2">
+                        <button  type="button" class="btn-block btn-lg text-white border-0" style="background-color: #3b5998;font-size: 13px;"><strong>Continuar con Facebook</strong></button>
+                    </div>                           
+                    <hr class="mb-0">
+                    <p class="text-center text-muted " style="font-size: 10px;">O ingresar con tu email</p>
+                    <form action="" class="col-12">
+                        <input type="email" class="form-control"placeholder="Email"> 
+                        <input type="password" class="form-control"placeholder="Contraseña">
+                        
+                        <div class="ml-2 mr-1 py-2 custom-control-sm custom-control-inline" style="font-size: 13px;">
+                            <div class="col-4">
+                                <input type="checkbox" class="custom-control-input" id="Remember" />
+                                <label for="Remember" class="custom-control-label text-muted"><small>Recordarme</small></label>
+                            </div>                                
+                            <a href="/forgot?lite=true" data-auto="user_login_password_forgot" class="custom-control"><small>Olvidé mi contraseña</small></a>
+                        </div>                   
+                        <button  type="button" class="btn-block btn-lg bg-danger text-white border-danger" style="font-size: 16px;"><strong>Ingresar</strong></button>                              
+                    </form>
+                    <div class="text-center my-2 px-4 py-2" style="font-size: 12px;">
+                        <span>¿Todavía no tienes una cuenta? </span>
+                        <a href="/signup?lite=true&amp;go=https%3A%2F%2Fdomicilios.com%2F" data-auto="user_login_register">Regístrate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin del modal-->
+
+	<footer id="footer" class="foot a-none pb-2"> 
+	    <div class="row fila align-items-center justify-content-center my-0">     
+	        <ul class="col list-unstyled"><!--1-->              
+	            <li>
+	              <a class="a-none" href="">Nosotros</a>
+	            </li>
+	            <li>
+	              <a class="a-none" href="">Privacidad</a>
+	            </li>
+	            <li>
+	              <a class="a-none" href="">Condiciones</a>
+	            </li>
+	            <li>
+	              <a class="a-none" href="http://www.sic.gov.co/" target="_blank">Secretaría de Industria y Comercio</a>
+	            </li>                  
+	        </ul>
+	        <ul class="col list-unstyled mr-4"><!--2--> 
+	            <li>
+	              <a class="a-none" href="https://deliveryhero.wd3.myworkdayjobs.com/domicilios" target="_blank" rel="noopener noreferrer">Sé un DomiHéroe</a>              
+	            </li>
+	            <li>
+	              <button id="" class="btn btn-sm btn-outline-danger text-light" rel="nofollow"><small>Registra tu negocio</small></button>
+	            </li>
+	        </ul> 
+	        <!--Top -->
+	        <ul class="col list-unstyled"> <!--3-->              
+	            <li>
+	              <a class="a-none" href="">top Cadenas</a>
+	            </li>
+	            <li>
+	              <a class="a-none" href="">top comidas</a>
+	            </li>
+	            <li>
+	              <a class="a-none" href="">top ciudades</a>                  
+	        </ul>
+	        <!--Content Social and Apps-->
+	        <div class="col list-inline"><!--4--> 
+	            <!--Social-->
+	            <dl class="list-unstyled">
+	                <dd class="a-none">Síguenos en:</dd>
+	                <dd class="fb list-inline-item">
+	                    <a href="https://www.facebook.com/DomiciliosCol/" target="_blank" class=" a-none facebook" title="Facebook">Facebook</a>
+	                </dd>
+	                <dd class="tw list-inline-item">
+	                    <a href="https://twitter.com/DomiciliosCol" target="_blank" class="a-none twitter" title="Twitter">Twitter</a>
+	                </dd>
+	                <dd class="yt list-inline-item">
+	                    <a href="https://www.youtube.com/user/DomiciliosBog" target="_blank" class=" a-none youtube" title="Youtube">Youtube</a>
+	                </dd>
+	            </dl>
+	        </div>
+	        <div class="col list-inline"> <!--5  Descargar app-->
+	            <!--Apps-->                
+	            <dl class="list-unstyled">
+	                <dd class="title">Descargar app</dd>
+	                <dd class="ic_iphone list-inline-item">
+	                    <a href="https://itunes.apple.com/es/app/domicilios-com-order-food/id611358746?mt=8&amp;none" target="_blank" class="a-none iphone" title="iPhone">iPhone</a>
+	                </dd>
+	                <dd class="ic_android list-inline-item">
+	                    <a href="https://play.google.com/store/apps/details?id=com.clickdelivery.android.domiciliosbogota&amp;referrer=none" target="_blank" class="a-none android" title="Android">Android</a>
+	                </dd>
+	            </dl>                
+	        </div>
+	    </div> 
+	    <hr style="background-color: pink"> 
+	    <div class="row fila my-0">
+	      <div class="col-3 justify-self-center columna">Domicilios © 2010-2020</div> 
+	      <div class="col-7 justify-self-end columna">Espacio para ubicar las banderas de paises</div>
+	    </div> 
+	</footer>
+
+	<!--JQuery-->
+	<script src="./js/jquery-3.5.1.min.js"></script>
+	<!--Popper-->
+	<script src="./js/popper.min.js"></script>
+	<!--Bootstrap-->
+	<script src="./js/bootstrap.min.js"></script>
+	<!--font awsome-->
+	<script src="https://kit.fontawesome.com/c6fd1a11d9.js" crossorigin="anonymous"></script>
+	<!--mi js-->
+	<script type="text/javascript" src="./js/js.js"></script>
+</body>
+</html>
